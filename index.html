@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen &mdash; Tech Strategy &amp; Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Theme bootstrap (avoid flash)
+    (function(){
+      try {
+        var t = localStorage.getItem('lumen-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch(e) {}
+    })();
+  </script>
+  <template id="__bundler_thumbnail" data-bg-color="#FAFAFA">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#FAFAFA"/>
+      <circle cx="950" cy="180" r="220" fill="#7D2AE8" opacity="0.25"/>
+      <text x="100" y="500" font-family="Georgia, serif" font-style="italic" font-size="180" fill="#7D2AE8" font-weight="400">Lumen.</text>
+      <rect x="100" y="560" width="120" height="3" fill="#0F0A18"/>
+      <text x="100" y="620" font-family="monospace" font-size="22" fill="#3A3147" letter-spacing="4">STRATEGY · DESIGN · AI</text>
+    </svg>
+  </template>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-row">
+    <a href="#top" class="brand" aria-label="Lumen home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Lumen<span style="color:var(--primary)">.</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#work" class="active" data-nav="work">Work</a></li>
+        <li><a href="#capabilities" data-nav="capabilities">Capabilities</a></li>
+        <li><a href="#industries" data-nav="industries">Industries</a></li>
+        <li><a href="#insights" data-nav="insights">Insights</a></li>
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li><a href="#careers" data-nav="careers">Careers</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="sun" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </span>
+        <span class="moon" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </span>
+      </button>
+      <a href="#cta" class="btn btn-primary">
+        Let's talk
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow reveal">Tech Strategy &amp; Consulting</span>
+          <h1 class="hero-headline reveal">
+            Modernize the <em>digital core</em>. Compound the upside.
+          </h1>
+        </div>
+        <div class="hero-meta reveal">
+          <p class="hero-lede">
+            We help boards and CIOs turn cloud, data, AI, and cyber into a single operating advantage&mdash;measured in EBITDA, not slideware.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#work" class="btn btn-primary">
+              Read the value cases
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="#capabilities" class="btn btn-ghost">
+              Our advisory practice
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-strip reveal">
+        <span class="hero-strip-label">Trusted by</span>
+        <div class="logo-marquee">
+          <div class="logo-track">
+            <span>Halcyon Bank</span><span>·</span>
+            <span>Northwind Health</span><span>·</span>
+            <span>Atlas Energy</span><span>·</span>
+            <span>Meridian Air</span><span>·</span>
+            <span>Coreform Auto</span><span>·</span>
+            <span>Praxis Retail</span><span>·</span>
+            <span>Vellum Studios</span><span>·</span>
+            <span>Halcyon Bank</span><span>·</span>
+            <span>Northwind Health</span><span>·</span>
+            <span>Atlas Energy</span><span>·</span>
+            <span>Meridian Air</span><span>·</span>
+            <span>Coreform Auto</span><span>·</span>
+            <span>Praxis Retail</span><span>·</span>
+            <span>Vellum Studios</span><span>·</span>
+          </div>
+        </div>
+        <span class="hero-strip-label" id="liveTime">— UTC</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Value cases · 2024–2026</span>
+          <h2 class="reveal">Tech bets that <em style="font-style:italic;color:var(--primary);font-variation-settings:'SOFT' 100,'WONK' 1">paid back</em>.</h2>
+        </div>
+        <p class="head-meta reveal">
+          Independently audited outcomes from Fortune 500 transformations. Filter by the lever that mattered most.
+        </p>
+      </div>
+
+      <div class="insights-tabs reveal" id="workFilter" role="tablist">
+        <button class="insights-tab active" data-filter="all">All cases</button>
+        <button class="insights-tab" data-filter="ai">AI &amp; Data</button>
+        <button class="insights-tab" data-filter="banking">Cloud &amp; Core</button>
+        <button class="insights-tab" data-filter="health">Cyber &amp; Resilience</button>
+        <button class="insights-tab" data-filter="brand">Value Architecture</button>
+        <button class="insights-tab" data-filter="cx">Operating Model</button>
+      </div>
+
+      <div class="work-grid" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="capabilities" id="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Advisory practice</span>
+          <h2 class="reveal">Eight tech levers.<br/><em style="font-style:italic;color:var(--primary);font-variation-settings:'SOFT' 100,'WONK' 1">One</em> board-ready plan.</h2>
+        </div>
+        <p class="head-meta reveal">
+          Our partners sit between the CIO, CFO, and CEO&mdash;translating technology choices into capital allocation, P&amp;L impact, and a sequence the org can actually execute.
+        </p>
+      </div>
+
+      <div class="cap-grid">
+        <ol class="cap-list" id="capList"></ol>
+        <div class="cap-preview" id="capPreview"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-cell reveal">
+          <div class="stat-num" data-count="412"><em>0</em></div>
+          <div class="stat-label">Live engagements across 31 countries this quarter</div>
+        </div>
+        <div class="stat-cell reveal">
+          <div class="stat-num"><em data-count="2.4">0</em>B</div>
+          <div class="stat-label">Annual cost-out delivered to clients in FY25</div>
+        </div>
+        <div class="stat-cell reveal">
+          <div class="stat-num" data-count="94"><em>0</em>%</div>
+          <div class="stat-label">Of senior engagements lead to follow-on programs</div>
+        </div>
+        <div class="stat-cell reveal">
+          <div class="stat-num" data-count="6800"><em>0</em></div>
+          <div class="stat-label">Practitioners across strategy, design, engineering &amp; AI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="section insights" id="insights">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Insights &amp; reports</span>
+          <h2 class="reveal">Field notes from the <em style="font-style:italic;color:var(--primary);font-variation-settings:'SOFT' 100,'WONK' 1">frontier</em>.</h2>
+        </div>
+        <p class="head-meta reveal">
+          Original research, market readouts, and provocations from our practice leaders. Updated weekly.
+        </p>
+      </div>
+      <div class="insights-tabs reveal" id="insightsFilter">
+        <button class="insights-tab active" data-topic="all">All topics</button>
+        <button class="insights-tab" data-topic="ai">Generative AI</button>
+        <button class="insights-tab" data-topic="leadership">C-suite</button>
+        <button class="insights-tab" data-topic="design">Design</button>
+        <button class="insights-tab" data-topic="ops">Operations</button>
+        <button class="insights-tab" data-topic="trust">Trust &amp; risk</button>
+      </div>
+      <div class="articles-grid" id="articlesGrid"></div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="about">
+    <div class="container">
+      <div class="manifesto-grid">
+        <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+        <div>
+          <p class="quote-text">
+            Most digital programs fail in the boardroom, not in the IDE. Our job is to make the <em>technology choice</em> and the <em>capital choice</em> the same conversation&mdash;then deliver against it, quarter after quarter.
+          </p>
+          <div class="quote-attribution">
+            <div class="attribution-avatar" aria-hidden="true"></div>
+            <div>
+              <div class="attribution-name">Aïsha Renteria</div>
+              <div class="attribution-role">Global Lead, Tech Strategy &amp; Advisory</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-card">
+        <div>
+          <span class="eyebrow reveal" style="color:rgba(255,255,255,0.85)">Start something</span>
+          <h2 class="reveal" style="margin-top:16px">
+            Bring us your hardest <em>tech bet</em>—we'll bring the value case.
+          </h2>
+        </div>
+        <div class="cta-actions reveal">
+          <form class="newsletter" id="newsletterForm" novalidate>
+            <input type="email" id="newsletterEmail" placeholder="you@company.com" aria-label="Email" required />
+            <button type="submit" id="newsletterBtn">Get a brief →</button>
+          </form>
+          <div style="opacity:.85;font-size:0.9rem">
+            Or reach <a href="#" style="text-decoration:underline">hello@lumen.studio</a> · We reply within 1 business day.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="careers">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Lumen<span style="color:var(--primary)">.</span></span>
+        </a>
+        <p>Independent global tech strategy &amp; consulting firm. Founded 2018. 6,800 advisors and architects across New York, London, Singapore, São Paulo, Lagos &amp; Berlin.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Practice</h5>
+        <ul>
+          <li><a href="#">Tech Strategy &amp; Advisory</a></li>
+          <li><a href="#">Cloud &amp; Digital Core</a></li>
+          <li><a href="#">Enterprise AI &amp; Data</a></li>
+          <li><a href="#">Cyber &amp; Resilience</a></li>
+          <li><a href="#">Operating Model</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Industries</h5>
+        <ul>
+          <li><a href="#">Financial Services</a></li>
+          <li><a href="#">Health &amp; Life Sciences</a></li>
+          <li><a href="#">Energy &amp; Utilities</a></li>
+          <li><a href="#">Retail &amp; Consumer</a></li>
+          <li><a href="#">Public Sector</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Careers <span style="color:var(--primary)">· 240 open</span></a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Stay close</h5>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">X / Twitter</a></li>
+          <li><a href="#">Substack</a></li>
+          <li><a href="#">Spotify</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mega-mark" aria-hidden="true">Lumen<span>.</span></div>
+
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <span>© 2026 Lumen Group, S.A.</span>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Modern slavery statement</a>
+        <a href="#">Accessibility</a>
+      </div>
+      <div class="footer-legal" style="font-family:'JetBrains Mono',monospace;font-size:0.78rem">
+        v.26.05 · Built with care in 6 cities
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
