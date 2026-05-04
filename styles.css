@@ -360,7 +360,7 @@ button {
   align-items: end;
 }
 .hero-headline {
-  font-size: var(--text-display);
+  font-size: clamp(3rem, 8vw, 7rem);
   line-height: 0.92;
   letter-spacing: -0.045em;
   margin: 24px 0 0;
